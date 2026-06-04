@@ -1,0 +1,28 @@
+:root {
+  --bg-dark: #051622;
+  --primary-teal: #1ba098;
+  --accent-sand: #deb992;
+  
+  --text-light: #ffffff;
+  --text-muted: #deb992;
+
+  --main-font: 'Montserrat', sans-serif;
+}
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome{
+  color: var(--text-light);
+  padding: 40px;
+  margin-top: 200px;
+  font-size: 50px;
+  font-weight: 400;
+}
