@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding:30px 0px;
+  border: 1px solid var(--accent-sand);
 }
 .main-pic,.middle-pic,.corner-pic{
   border-radius: 50%;
@@ -47,6 +49,8 @@
   transition: opacity 0.3s ease;
   display: inline-block;
   text-decoration: none;
+  border: 1px solid white;
+  font-weight:500;
 }
 .welcome-btn:hover{
   opacity: 0.8;
