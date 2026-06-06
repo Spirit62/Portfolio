@@ -8,7 +8,9 @@
 ];
 
 function getLogoLink() {
-  return window.location.pathname.endsWith('/pages/menu.html') ? '../index.html' : 'menu.html';
+  const pathname = window.location.pathname;
+  const isMenuPage = pathname.includes('menu.html');
+  return isMenuPage ? '../index.html' : 'menu.html';
 }
 
 function renderNavbar() {
