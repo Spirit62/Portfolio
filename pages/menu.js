@@ -15,7 +15,10 @@ function getLogoLink() {
 
 function renderNavbar() {
   const nav = document.querySelector('nav.navbar');
-  if (!nav) return;
+  if (!nav) {
+    console.warn('Navbar element not found');
+    return;
+  }
 
   nav.innerHTML = `
     <div class="navbar-container">
@@ -27,4 +30,9 @@ function renderNavbar() {
   `;
 }
 
-document.addEventListener('DOMContentLoaded', renderNavbar);
+// Run immediately if DOM is ready, otherwise wait
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderNavbar);
+} else {
+  renderNavbar();
+}
