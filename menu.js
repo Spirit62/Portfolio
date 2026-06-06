@@ -1,4 +1,4 @@
-﻿const navLinks = [
+const navLinks = [
   { href: 'experience.html', text: 'Experience' },
   { href: 'extra-curriculars.html', text: 'ECAs' },
   { href: 'social-work.html', text: 'Skills' },
