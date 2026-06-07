@@ -9,7 +9,6 @@
 }
 .main-pic,.middle-pic,.corner-pic{
   border-radius: 50%;
-  margin-bottom: 20px;
   object-fit: cover;
   object-position: bottom;
 }
@@ -19,6 +18,7 @@
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .main-pic{
   width: 230px;
@@ -66,13 +66,14 @@
   opacity: 0.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
  .welcome-container{
   padding:10px;
  }
  .pic-container{
   flex-direction: column;
   gap:5px;
+  margin-bottom:10px;
  }
  .main-pic{
   width: 200px;
@@ -87,8 +88,41 @@
 }
 .quote{
   font-size: 18px;
-  padding: 0 5px;}
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
 .welcome-btn{
-  padding: 12px 25px;
+  padding: 12px 20px;
+}
+}
+@media (max-width: 600px){
+  .welcome-container{
+  padding: 2px;
+ }
+ .pic-container{
+  flex-direction: column;
+  gap:2px;
+  margin-bottom:5px;
+ }
+ .main-pic{
+  width: 170px;
+  height: 170px;
+ }
+ .middle-pic, .corner-pic{
+ display:none;
+ }
+.name{
+  font-size: 17px;
+  padding: 10px 2px;
+}
+.quote{
+  font-size: 12px;
+  padding: 0 3px;
+  margin-bottom: 5px;
+
+  }
+.welcome-btn{
+  padding: 10px;
+  font-size: 10px;
 }
 }
