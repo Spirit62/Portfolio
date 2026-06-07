@@ -1,18 +1,59 @@
 .main-flex{
-  display:flex;
-  gap:20px;
-  padding:20px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
 }
 
 .text{
-  color:var(--text-light);
-  flex:2;
+  color: var(--text-light);
+  flex: 2;
+  line-height: 1.6;
 }
+
 .photo{
-  width:20%;
-  aspect-ratio:1/1;
+  width: 20%;
+  min-width: 150px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
-  flex:1;
+  flex: 1;
   object-fit: cover;
   border: 2px solid var(--primary-teal);
+}
+
+
+@media (max-width: 768px) {
+  .main-flex {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+  .text {
+    flex: 1;
+    font-size: 15px;
+  }
+  .photo {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    min-width: auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .main-flex {
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .photo {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
 }

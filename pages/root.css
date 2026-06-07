@@ -21,7 +21,7 @@
 body{
   font-family: var(--main-font);
   background-color: var(--bg-dark);
-  padding:70px 50px;
+  padding: 70px 50px;
 }
 
 .navbar {
@@ -59,6 +59,8 @@ body{
   display: flex;
   list-style: none;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .navbar-links a {
@@ -93,7 +95,6 @@ body{
   border: 1px solid white;
 }
 
-
 .contact{
   color: var(--text-light);
   font-size: 18px;
@@ -101,3 +102,27 @@ body{
   text-align: center;
   line-height: 2;
 }
+
+
+@media (max-width: 768px) {
+    body{
+    padding: 20px 30px;
+  }
+  .navbar{
+    display:none;
+  }
+  .contact{ 
+    font-size: 16px;
+    margin-top: 80px;
+  }
+  .back-btn{
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+  .contact{
+    font-size: 13px;
+    margin-top: 80px;
+  }
+}
+
+
