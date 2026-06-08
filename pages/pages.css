@@ -1,6 +1,6 @@
 .main-flex{
   display: flex;
-  gap: 20px;
+  gap: 50px;
   padding: 20px;
   align-items: flex-start;
 }
@@ -9,6 +9,7 @@
   color: var(--text-light);
   flex: 2;
   line-height: 1.6;
+  margin-bottom:70px;
 }
 
 .photo{
