@@ -3,6 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 1180px;
+  margin: 120px auto 0;
+  background: rgba(7, 23, 34, 0.94);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 32px;
+  padding: 44px 36px 36px;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.22);
 }
 
 .menu-pic{
@@ -12,22 +19,24 @@
   object-fit: cover;
   object-position: center;
   margin-bottom: 30px;
+  border: 3px solid rgba(27, 160, 152, 0.6);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.22);
 }
 
 .menu-title{
   color: var(--text-light);
   font-size: 36px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   padding: 0 10px;
+  text-align: center;
 }
 
 .menu-options{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--accent-sand);
-  padding: 50px;
-  column-gap: 30px;
-  row-gap: 100px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 40px;
+  column-gap: 28px;
+  row-gap: 36px;
   width: 100%;
   max-width: 1100px;
 }
@@ -38,24 +47,26 @@
   justify-content: center;
   align-items: center;
   padding: 30px 20px;
-  height: 300px;
-  border-radius: 10px;
+  min-height: 280px;
+  border-radius: 24px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   font-weight: 500;
-  gap: 30px;
+  gap: 20px;
   text-align: center;
-  border: 1px solid var(--primary-teal);
+  border: 1px solid rgba(27, 160, 152, 0.55);
+  background-color: rgba(255,255,255,0.06);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03);
 }
 
 .menu-option-title {
-  font-size: 25px;
+  font-size: 26px;
   color: var(--text-light);
 }
 
 .menu-option-desc{
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-muted);
   display: block;
   font-weight: 700;
@@ -63,8 +74,10 @@
 }
 
 .menu-option:hover{
-  color: var(--text-light);
-  border: 1px solid white;
+  transform: translateY(-6px);
+  border-color: var(--primary-teal);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+  background: rgba(27, 160, 152, 0.08);
 }
 
 .menu-option:hover .menu-option-desc{
