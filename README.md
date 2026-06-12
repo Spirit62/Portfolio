@@ -1,5 +1,8 @@
 # Personal Portfolio Site
 
+## Preview
+
+![Portfolio Preview](preview.jpeg)
 ## What It Is
 This is my personal portfolio website designed to showcase my journey as a curious, lifelong learner. It highlights my academic background, involvement in community and social work, extra-curricular activities, and most importantly, my technical interests and personality.
 
